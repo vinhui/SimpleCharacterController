@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.unity.ide.rider": "1.0.8",
     "com.unity.ide.vscode": "1.0.7",
     "com.unity.inputsystem": "0.2.10-preview",
     "com.unity.package-manager-ui": "2.2.0",
