@@ -74,6 +74,12 @@ public class CharacterControllerMotor : MonoBehaviour
                 _stamina = maxSprintTime;
         }
 
+        if ((controller.collisionFlags & CollisionFlags.Above) != 0)
+        {
+            if (_moveDir.y > 0)
+                _moveDir.y = 0;
+        }
+
         controller.Move(transform.rotation * _moveDir);
         if (IsGrounded)
         {
